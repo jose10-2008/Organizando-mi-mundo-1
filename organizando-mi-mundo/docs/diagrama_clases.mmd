@@ -1,0 +1,45 @@
+classDiagram
+    class Task {
+      +str title
+      +str description
+      +bool completed
+      +mark_completed()
+      +__str__()
+    }
+
+    class TaskView {
+      +display_menu()
+      +display_tasks(tasks)
+      +display_message(message)
+      +ask_for_task_data()
+      +ask_for_task_index()
+      +ask_for_export_filename()
+    }
+
+    class TaskController {
+      +tasks: list
+      +view: TaskView
+      +run()
+      +create_task()
+      +list_tasks()
+      +complete_task()
+      +export_tasks()
+      +exit_program()
+    }
+
+    class TaskManager {
+      +_tasks: list
+      +add_task(title, description)
+      +list_tasks()
+      +complete_task(index)
+      +count()
+    }
+
+    class main {
+      +main()
+    }
+
+    TaskController --> TaskView
+    TaskController --> Task
+    TaskController --> TaskManager
+    main --> TaskController

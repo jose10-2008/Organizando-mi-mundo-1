@@ -1,0 +1,4 @@
+# Librerías externas requeridas
+rich
+pandas
+pytest
