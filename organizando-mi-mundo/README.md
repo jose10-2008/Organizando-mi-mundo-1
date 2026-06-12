@@ -1,236 +1,142 @@
-# Organizando Mi Mundo
+# 🌍 ORGANIZANDO MI MUNDO 📚✅
 
-Proyecto en Python para organizar tareas personales con Programación Orientada a Objetos (POO) y arquitectura MVC.
+## Integrante
 
-## Objetivo
+* 👨‍💻 José Rodríguez Escobar
 
-Crear una aplicación de consola que permita:
-- Crear tareas.
-- Listar tareas.
-- Marcar tareas como completadas.
-- Exportar tareas a un archivo CSV.
+---
 
-## Integrantes del Proyecto
+## 📖 Descripción del Proyecto
 
-- José Rodríguez Escobar
-- Brandon Altamar
+**Organizando Mi Mundo** es una aplicación de consola desarrollada en **Python 🐍** para ayudar a los estudiantes a gestionar sus tareas académicas y personales.
 
-## Requisitos del proyecto
+La aplicación ofrece una experiencia rápida y clara en la terminal, con funciones para:
 
-- Lenguaje: Python
-- Arquitectura: MVC (Modelo, Vista, Controlador)
-- Programación: POO
-- Librerías externas: `rich`, `pandas`
-- Pruebas: `pytest`
-- Documentación: `README.md`, `docs/proceso_desarrollo.md`
-- Diagrama de clases: `docs/diagrama_clases.mmd`
-- Código en GitHub
+- ✅ Crear tareas.
+- 📋 Listar todas las tareas.
+- ✔️ Marcar tareas como completadas.
+- 📄 Exportar tareas a un archivo CSV.
 
-## Estructura del proyecto
+El proyecto está diseñado con **Programación Orientada a Objetos (POO)** y la arquitectura **MVC (Modelo - Vista - Controlador)** para mantener la lógica separada, el código legible y fácil de mantener.
 
-```
-organizando-mi-mundo/
-  README.md
-  CONTRIBUTING.md
-  requirements.txt
-  .gitignore
-  src/
-    organizando_mi_mundo/
-      __init__.py
-      main.py
-      controllers/
-        task_controller.py
-      models/
-        task.py
-        task_manager.py
-      views/
-        task_view.py
-  tests/
-    conftest.py
-    test_task.py
-    test_task_manager.py
-  docs/
-    proceso_desarrollo.md
-    diagrama_clases.mmd
-    screenshots/
-```
+---
 
-## Tecnologías y librerías
+## 🚀 Resumen
 
-- `rich`: mejora la presentación en la consola con tablas, paneles y colores.
-- `pandas`: permite exportar tareas a CSV fácilmente.
-- `pytest`: framework de pruebas unitarias.
+Esta solución permite organizar el trabajo diario de forma simple y eficiente desde la terminal, con una estructura enfocada en:
 
-## Cómo instalar dependencias
+- Modularidad.
+- Reutilización de código.
+- Pruebas unitarias.
+- Interfaz más agradable con `rich`.
 
-1. Abre la terminal en VS Code.
-2. Asegúrate de estar en la carpeta del proyecto.
-3. Ejecuta:
+---
 
-```powershell
-python -m pip install -r requirements.txt
-```
+## 🧩 Características principales
 
-## Cómo ejecutar el proyecto
+- Crear tareas con título y descripción.
+- Ver el estado de cada tarea.
+- Completar tareas y actualizar su estado.
+- Exportar el listado completo a un archivo CSV.
+- Validación de entradas para evitar datos erróneos.
 
-```powershell
-python src\organizando_mi_mundo\main.py
-```
+---
 
-## Cómo ejecutar las pruebas
+## 🛠️ Tecnologías utilizadas
 
-```powershell
-python -m pytest
-```
+| Tecnología      | Uso                        |
+| --------------- | -------------------------- |
+| 🐍 Python       | Lenguaje principal         |
+| 🎨 Rich         | Interfaz visual en consola |
+| 📊 Pandas       | Exportación de datos a CSV |
+| 🧪 Pytest       | Pruebas unitarias          |
+| 🌐 Git y GitHub | Control de versiones       |
 
-## Ejecutar y depurar en Visual Studio Code
+---
 
-1. Abre la carpeta `organizando-mi-mundo` en VS Code.
-2. Asegúrate de seleccionar el intérprete Python del entorno virtual (`.venv`).
-3. Para ejecutar el script directamente desde la terminal integrado, usa:
+## 🏛️ Arquitectura del proyecto
 
-```powershell
-python src\organizando_mi_mundo\main.py
+El proyecto sigue el patrón **MVC**:
+
+- **Modelo:** maneja datos y reglas de negocio (`Task`, `TaskManager`).
+- **Vista:** presenta la información en consola (`TaskView`).
+- **Controlador:** dirige las acciones del usuario y enlaza modelo y vista (`TaskController`).
+
+---
+
+## 📁 Estructura del proyecto
+
+- `src/organizando_mi_mundo/main.py` — Punto de entrada de la aplicación.
+- `src/organizando_mi_mundo/controllers/task_controller.py` — Lógica de flujo y comandos.
+- `src/organizando_mi_mundo/models/task.py` — Definición del modelo de tarea.
+- `src/organizando_mi_mundo/models/task_manager.py` — Gestión de la colección de tareas.
+- `src/organizando_mi_mundo/views/task_view.py` — Presentación en consola.
+- `tests/` — Pruebas unitarias con Pytest.
+
+---
+
+## ⚙️ Instalación y ejecución
+
+1. Clona el repositorio.
+2. Abre una terminal en la carpeta del proyecto.
+3. Instala dependencias:
+
+```bash
+pip install -r requirements.txt
 ```
 
-4. Para depuración, crea o usa `.vscode/launch.json` con una configuración Python; ejemplo mínimo:
+4. Ejecuta la aplicación:
 
-```json
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Python: Ejecutar main",
-      "type": "python",
-      "request": "launch",
-      "program": "${workspaceFolder}/src/organizando_mi_mundo/main.py",
-      "console": "integratedTerminal"
-    }
-  ]
-}
+```bash
+python src/organizando_mi_mundo/main.py
 ```
 
-Nota: el repositorio incluye `.vscode/launch.json` orientado a Chrome; si quieres, puedo añadir la configuración Python por ti.
+---
 
-## Arquitectura MVC
+## 🧪 Pruebas
 
-- `models/`: define las estructuras de datos y reglas de negocio.
-- `views/`: presenta la información al usuario y solicita entradas.
-- `controllers/`: controla el flujo, procesa entradas y actualiza modelo y vista.
+Para ejecutar las pruebas unitarias usa:
 
-## Diagrama de clases
-
-El diagrama de clases está disponible en `docs/diagrama_clases.mmd`.
-
-```mermaid
-classDiagram
-    class Task {
-      +str title
-      +str description
-      +bool completed
-      +mark_completed()
-      +__str__()
-    }
-
-    class TaskView {
-      +display_menu()
-      +display_tasks(tasks)
-      +display_message(message)
-      +ask_for_task_data()
-      +ask_for_task_index()
-      +ask_for_export_filename()
-    }
-
-    class TaskController {
-      +tasks: list
-      +view: TaskView
-      +run()
-      +create_task()
-      +list_tasks()
-      +complete_task()
-      +export_tasks()
-      +exit_program()
-    }
-
-    class TaskManager {
-      +_tasks: list
-      +add_task(title, description)
-      +list_tasks()
-      +complete_task(index)
-      +count()
-    }
-
-    class main {
-      +main()
-    }
-
-    TaskController --> TaskView
-    TaskController --> TaskManager
-    TaskManager --> Task
-    main --> TaskController
+```bash
+pytest
 ```
 
-## Cómo documentar capturas de pantalla
+Se incluyen pruebas para:
 
-Guarda las capturas de pantalla en `docs/screenshots/`.
-Puedes usar nombres como:
-- `estructura_proyecto.png`
-- `instalacion_dependencias.png`
-- `ejecucion_programa.png`
-- `pruebas_pytest.png`
+- Creación y validación de tareas.
+- Completar tareas.
+- Listado y almacenamiento de tareas.
 
-## Cómo subir el proyecto a GitHub
+---
 
-1. Crea un repositorio en GitHub.
-2. Inicializa Git en el proyecto:
+## 📸 Evidencias del proyecto
 
-```powershell
-git init
-```
+Las capturas del flujo de uso se encuentran en `docs/screenshots/`.
 
-3. Agrega archivos al área de preparación:
+![Prueba 1](docs/screenshots/1era_prueba.png)
 
-```powershell
-git add .
-```
+![Prueba 2](docs/screenshots/2da_prueba.png)
 
-4. Crea el primer commit:
+![Prueba 3](docs/screenshots/3er_prueba.png)
 
-```powershell
-git commit -m "Inicializa proyecto Organizando Mi Mundo con MVC y POO"
-```
+![Prueba 4](docs/screenshots/4ta_prueba.png)
 
-5. Crea un repositorio remoto y conéctalo. Reemplaza `<URL_REMOTE>` con la URL de tu repositorio:
+![Prueba 4 - parte 2](docs/screenshots/4ta_prueba_parte2.png)
 
-```powershell
-git remote add origin <URL_REMOTE>
-```
+![Cierre del programa](docs/screenshots/5ta_prueba_final.png)
 
-6. Sube el commit inicial:
+---
 
-```powershell
-git branch -M main
-git push -u origin main
-```
+## 🏆 Conclusión
 
-7. Después de cada cambio importante, crea nuevos commits:
+El proyecto demuestra una implementación sólida de una aplicación de tareas con **POO**, **MVC** y pruebas unitarias. Además, mejora la presentación en consola y permite exportar los resultados a CSV.
 
-- `git add .`
-- `git commit -m "Agrega exportación a CSV con pandas"`
-- `git commit -m "Integra Rich en la interfaz de consola"`
-- `git commit -m "Añade pruebas unitarias con pytest"`
+---
 
-8. Sube los nuevos commits:
+## 📌 Nota final
 
-```powershell
-git push
-```
+Este repositorio está preparado para ser evaluado como entrega final, con documentación clara, pruebas y un flujo de trabajo completo.
 
-## Notas finales
+---
 
-Este proyecto está diseñado para mostrar claramente:
-- separación de responsabilidades con MVC,
-- uso de clases en Python,
-- integración de librerías externas,
-- pruebas automatizadas,
-- documentación y entrega profesional.  
+# 🚀 ¡Gracias por usar Organizando Mi Mundo! 🌍📚✨
