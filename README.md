@@ -113,17 +113,17 @@ Se incluyen pruebas para:
 
 Las capturas del flujo de uso se encuentran en `docs/screenshots/`.
 
-![Prueba 1](docs/screenshots/1era_prueba.png)
+![Prueba 1](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/1era_prueba.png)
 
-![Prueba 2](docs/screenshots/2da_prueba.png)
+![Prueba 2](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/2da_prueba.png)
 
-![Prueba 3](docs/screenshots/3er_prueba.png)
+![Prueba 3](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/3er_prueba.png)
 
-![Prueba 4](docs/screenshots/4ta_prueba.png)
+![Prueba 4](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/4ta_prueba.png)
 
-![Prueba 4 - parte 2](docs/screenshots/4ta_prueba_parte2.png)
+![Prueba 4 - parte 2](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/4ta_prueba_parte2.png)
 
-![Cierre del programa](docs/screenshots/5ta_prueba_final.png)
+![Cierre del programa](https://github.com/jose10-2008/Organizando-mi-mundo-1/raw/main/docs/screenshots/5ta_prueba_final.png)
 
 ---
 
