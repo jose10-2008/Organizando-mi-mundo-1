@@ -233,4 +233,4 @@ Este proyecto está diseñado para mostrar claramente:
 - uso de clases en Python,
 - integración de librerías externas,
 - pruebas automatizadas,
-- documentación y entrega profesional.
+- documentación y entrega profesional.  
